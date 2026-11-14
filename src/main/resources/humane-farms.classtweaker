@@ -1,0 +1,8 @@
+classTweaker  v1  official
+
+accessible field net/minecraft/world/entity/ai/goal/MoveToBlockGoal maxStayTicks I
+accessible field net/minecraft/world/entity/ai/goal/MoveToBlockGoal reachedTarget Z
+accessible field net/minecraft/world/entity/ai/goal/MoveToBlockGoal verticalSearchRange I
+accessible field net/minecraft/world/entity/ai/goal/MoveToBlockGoal searchRange I
+
+accessible class net/minecraft/world/effect/HungerMobEffect

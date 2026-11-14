@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "humane-farms",
+	"version": "${version}",
+	"name": "Humane farms",
+	"description": "Makes overcrowded and inhumane animal and villager farms far less efficient by adding a hunger mechanic and modifying loot, breeding and restocking mechanics to encourage engaging with mobs the intended way, while not fully disallowing industrial farming.",
+	"authors": [
+		"Syrena(sereinesvulpes on discord)"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/humane-farms/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"syrena.humanefarms.HumaneFarms"
+		],
+		"client": [
+			"syrena.humanefarms.client.HumaneFarmsClient"
+		],
+		"fabric-datagen": [
+			"syrena.humanefarms.client.HumaneFarmsDataGenerator"
+		]
+	},
+	"mixins": [
+		"humane-farms.mixins.json",
+		{
+			"config": "humane-farms.client.mixins.json",
+			"environment": "client"
+		}
+	],
+    "accessWidener": "humane-farms.classtweaker",
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
